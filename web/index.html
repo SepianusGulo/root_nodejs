@@ -1,0 +1,121 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>CRUD</title>
+	<!-- Meta-Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords"
+		content="Core Login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+
+	</script>
+	<!-- //Meta-Tags -->
+	<!-- Index-Page-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<!-- //Custom-Stylesheet-Links -->
+	<!--fonts -->
+	<link href="//fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,500,600,700,800" rel="stylesheet">
+	<!-- //fonts -->
+	<!-- Font-Awesome-File -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+</head>
+
+<body>
+	<h1 class="title-agile text-center">CRUD DATA</h1>
+	<div class="content-w3ls">
+		<div class="agileits-grid">
+			<div class="content-top-agile">
+				<h2>Crud Data</h2>
+			</div>
+			<div class="content-bottom">
+				<form action="" id="regis-form">
+					<div class="form-group">
+						<label for="id">Id</label>
+						<input type="number" id="id" class="form-control" placeholder="masukan No anda"
+							autocomplete="off">
+					</div>
+					<div class="form-group">
+						<label for="nama">Nama Product</label>
+						<input type="text" id="nama" class="form-control" placeholder="masukan nama product anda"
+							autocomplete="off">
+					</div>
+					<div class="form-group">
+						<label for="hp">Harga Product</label>
+						<input type="text" id="hp" class="form-control" placeholder="isi harga product anda"
+							autocomplete="off">
+					</div>
+					<div class="form-group">
+						<label for="kp">Kategori Product</label>
+						<input type="text" id="kp" class="form-control" placeholder="masukan kategori product anda"
+							autocomplete="off">
+					</div>
+
+					<input type="submit" value="Simpan Data" class="btn btn-success btn-block">
+
+				</form>
+			</div>
+			<!-- //content bottom -->
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<table class="table table-striped mt-4 bg-danger">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Nama Product</th>
+						<th>Harga product</th>
+						<th>Kategori Product</th>
+						<th>Aksi</th>
+					</tr>
+				</thead>
+				<tbody id="regis-list">
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="copyright text-center">
+		<p>© 2018 Crud Data. All rights reserved | Design by
+			<a href="">S|G</a>
+		</p>
+	</div>
+	<!--//copyright-->
+	<script src="js/main.js"></script>
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- script for show password -->
+	<script>
+		$(".toggle-password").click(function () {
+
+			$(this).toggleClass("fa-eye fa-eye-slash");
+			var input = $($(this).attr("toggle"));
+			if (input.attr("type") == "password") {
+				input.attr("type", "text");
+			} else {
+				input.attr("type", "password");
+			}
+		});
+
+	</script>
+	<!-- /script for show password -->
+
+</body>
+<!-- //Body -->
+
+</html>
